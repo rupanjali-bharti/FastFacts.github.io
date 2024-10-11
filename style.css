@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    box-sizing: border-box;
+    font-family: "Caudex", serif;
+}
+
+header{
+    
+    background-color: #2a53c1;
+}
+.navbar{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    display: flex;  
+    width: 100%;
+    padding-left: 60px;
+}
+a{
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 800;
+    transition: 1s;
+   
+}
+a:hover{
+    color: rgb(178, 173, 173);
+    
+}
+.content{
+    color: white;
+    display: flex;
+    text-align: start;
+
+}
+
+.mainheading{
+    height: 225px;
+    background-color: white;
+    color: #0e1c40;
+    display: flex;
+    margin-left: 60px;
+    
+}
+.mainheading h1{
+    font-size: 160px;
+    font-weight: 900;
+}
+.mainheading h4{
+    font-size: 22px;
+    font-weight: 800;
+}
+.sidehead{
+    line-height: 25px;
+    width: 95px;
+    margin-top: 70px;
+    margin-left: 30px;
+    
+
+}
+.line{
+    height: 92px;
+    width: 4px;
+    background-color: #0e1c40;
+    margin-top: 75px;
+    margin-left: 50px;
+}
+
+
+/** blog page----------------- **/
+.blogsec{
+    height: 500px;
+    background-color: rgb(227, 234, 236);
+}
+
+.shop-sec{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    padding-top: 50px;
+}
+   /** box designing**/
+.box1{
+    height: 400px;
+    width: 30%;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgb(116, 117, 118);
+}  
+.box1 h1{
+    padding-left: 10px;
+}
+.box-img{
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+.box1 .box-content a{
+   color: #2a53c1;
+}
+.box1 .box-content p{
+    color: grey;
+}
+
+/** about page ----------------**/
+.aboutpage{
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    color: #2a53c1;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+
+}
+
+.image{
+    background-image: url("manrobo.jpg");
+    background-size: cover;
+    height: 420px;
+    width: 90%;
+    margin-left: 80px;
+}    
+
+.image .contact{
+    position: absolute;
+    bottom: 0px;
+    width: 75%;
+    padding-left: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about1{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+.about2{
+    color: rgb(103, 102, 102);
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+#about h4{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #172a47;
+    font-weight: 900;
+}
+/*end para*/
+.endpara{
+    height: 450px;
+    background-color:#172a47;
+    color: white;
+    text-align: center;
+    display: flex;
+
+}
+#foot{
+    background-color: #172a47;
+}
+.box2{
+   height: 60px;
+   max-width: 40%;
+   padding-top: 100px;
+  
+   
+}
+.lastbox{
+    padding-top: 100px;
+    width: 450px;
+    width: 60%;
+
+}
+button{
+    height: 40px;
+    width: 130px;
+    background-color: #2a53c1;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+button:hover{
+    transition: 1s;
+    background-color: #193277;
+
+}
+input[type=text]{
+    height: 38px;
+    width: 270px;
+    border: none;
+}
+input[type=text]:focus{
+    border: none;
+    border: 4px solid red;
+}
+
+.lastbox h1,h3,p{
+    padding: 20px;
+}
+.lastbox p{
+    font-size: 0.7rem;
+}
+
+.box2 a{
+    display: block;
+}
+.contact{
+    height: 35px;
+    width:1200px;
+    background-color: #2a53c1;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 40px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: 100px;
+}
+
+
+
+/** --------------mobile view-----------------**/
+@media (max-width:425px){
+    .image{
+        width: 90%;
+        height: 200px;
+        margin-left: 15px;
+        padding: 0;
+    }
+    .contact{
+        display: none;
+    }
+    
+}    
+
+
+
+/* responsive for mobile view*/
+@media (max-width:425px) {
+    .endpara{
+        width: 320px;
+        justify-content: left;
+    }
+    .mainheading{
+        height: 100px;
+        margin: 0;
+        width: 100%;
+    }
+    .mainheading h1{
+        font-size: 55px;
+        padding-left: 20px;
+        justify-content: left;
+    }  
+    .mainheading .line, .sidehead, .box2{
+        display: none;
+    } 
+    .navbar{
+        width: 100%;
+        height: 55px;
+        font-size: 10px;
+        padding: 0;
+    }
+    .lastbox{
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .messagebox{
+        padding-top: 40px;
+        width: 100%;
+        
+    }   
+
+    .lastbox h1{
+        
+        font-size: 1.5rem;
+        width: 200px;
+       
+    }
+    button{
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 180px;
+    }
+    p{
+        width: 200px;
+    }
+
+/**blog section on**/
+    .blogsec{
+        height: 1200px;
+        background-color: white;
+    }
+    .shop-sec{
+        display: inline;
+    }
+    .box1{
+        width: 100%;
+        margin-bottom: 10px;
+        height: fit-content;
+        box-shadow:none;
+    }
+    /** about section**/
+    #about{
+        background-color: rgb(246, 240, 240);
+    }
+    .aboutpage{
+        max-width: 100%;
+        height: 350px;
+        display: inline;       
+    }
+    .aboutpage p{
+        width:85%;
+    }
+    .box1 p{
+        width: 90%;
+    }
+}
+
+@media (max-width:1057px){
+    .sidehead ,.line{
+        display: none;
+    }
+    
+}

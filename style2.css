@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    box-sizing: border-box;
+    font-family: "Caudex", serif;
+}
+/** main heading tag**/
+header{
+    
+    background-color: #2a53c1;
+}
+.navbar{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    display: flex;  
+    width: 100%;
+    padding-left: 60px;
+}
+a{
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 800;
+    transition: 1s;
+   
+}
+a:hover{
+    color: rgb(178, 173, 173);
+    
+}
+
+.content{
+    color: white;
+    display: flex;
+    text-align: start;
+
+}
+/** blog section page**/
+.blogsec{
+    height: 1800px;
+}  
+.blogsec h1{
+    text-align: center;
+    font-weight: bolder;
+
+}  
+
+/** fact box**/
+.factbox{
+    height: fit-content;
+    width: 80%;
+    background-color: aliceblue;
+    position: relative;
+    left: 10%;
+    top: 1%;
+    
+    margin-bottom: 50px;
+    display: flex;
+    box-shadow: 20px 20px 50px grey;
+}
+.imgdiv{
+    width: 40%;
+    height: 600px;
+    background-size: cover;
+   
+}
+.textbox{
+    width: 60%;
+    position: relative;
+    padding-top: 20px;
+    padding-right: 1%;
+    left: 2%;
+    top: 5%;
+      
+}
+h1{
+    color: #0f204d;
+    font-weight: 900;
+}
+h5{
+    color: #2a53c1;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0;
+    text-align: right;
+}
+p{
+    color: grey;
+    padding-bottom: 10px;
+}
+#blog4{
+    height:420px;
+}
+
+
+/** line --------**/
+
+
+/** mobile view**/
+@media (max-width:425px){
+    .navbar{
+        width: 100%;
+        height: 55px;
+        font-size: 10px;
+        padding: 0;
+    }
+    .image{
+        width: 90%;
+        height: 200px;
+        margin-left: 15px;
+        padding: 0;
+    }
+    .contact{
+        display: none;
+    }
+    .aboutpage{
+        max-width: 100%;
+        height: 350px;
+        display: inline;       
+    }
+    .aboutpage p{
+        width:85%;
+    }
+}    
+    /** fact box designing**/
+    @media (max-width:425px){
+    .blogsec .factbox{
+        height: fit-content;
+        display: inline;
+        border-top: 2px solid black;
+        background-color: aqua;
+
+    }
+    .blogsec{
+        height: fit-content;
+        width: 90%;
+       
+    }
+    .textbox{
+        width: 90%;
+        border-bottom: 2px black;
+    }
+    .imgdiv{
+        width: 270px;
+        height: 250px;
+        margin-top: 50px;
+        background-size: cover;
+        
+    }
+    p{
+        color: grey;
+        padding-bottom: 10px;
+    }
+    .line{
+        height: 2px;
+        background-color: black;
+        width: 100%;
+    }
+    
+}    
+@media (min-width:426px) and (max-width:1057px){
+    .imgdiv{
+        display: none;
+    }
+    .textbox{
+        width: 80%;
+        height: fit-content;
+    }
+    
+}
